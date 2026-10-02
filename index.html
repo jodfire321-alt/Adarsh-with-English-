@@ -4,188 +4,148 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SpeakEasy English | Spoken English by Adarsh</title>
-
-<meta name="description" content="Learn Spoken English confidently with Adarsh. Improve speaking, grammar, vocabulary, pronunciation and daily conversation.">
+<title>Adarsh | Spoken English Classes</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
     scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f5f8fc;
+    background:#f5f7fb;
     color:#172033;
     line-height:1.6;
 }
 
-/* HEADER */
-
-header{
+/* NAVBAR */
+nav{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,.96);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid #e5e9f2;
-}
-
-.navbar{
-    max-width:1200px;
-    margin:auto;
-    padding:16px 20px;
+    background:#ffffff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
+    padding:15px 7%;
 }
 
 .logo{
-    font-size:25px;
+    font-size:24px;
     font-weight:800;
-    color:#1769ff;
+    color:#2563eb;
 }
 
-.logo span{
-    color:#111827;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
-nav a{
+nav ul li a{
     text-decoration:none;
-    color:#273244;
-    margin-left:22px;
+    color:#172033;
     font-weight:600;
 }
 
-nav a:hover{
-    color:#1769ff;
+nav ul li a:hover{
+    color:#2563eb;
 }
 
 /* HERO */
-
 .hero{
     min-height:90vh;
     display:flex;
     align-items:center;
-
-    background:
-    radial-gradient(circle at 80% 20%,#dceaff,transparent 35%),
-    linear-gradient(135deg,#ffffff,#eef5ff);
+    justify-content:space-between;
+    padding:70px 8%;
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+    gap:50px;
 }
 
-.hero-container{
-    width:1200px;
-    max-width:92%;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-
-    gap:60px;
-    align-items:center;
+.hero-text{
+    flex:1;
 }
 
 .badge{
     display:inline-block;
-    background:#e7f0ff;
-    color:#1769ff;
+    background:#dbeafe;
+    color:#1d4ed8;
     padding:8px 15px;
     border-radius:30px;
-    font-weight:700;
+    font-weight:bold;
     margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:58px;
+    font-size:55px;
     line-height:1.1;
     margin-bottom:20px;
 }
 
 .hero h1 span{
-    color:#1769ff;
+    color:#2563eb;
 }
 
 .hero p{
     font-size:19px;
-    color:#5b6678;
-    max-width:650px;
-    margin-bottom:28px;
-}
-
-.buttons{
-    display:flex;
-    gap:14px;
-    flex-wrap:wrap;
+    color:#5b6475;
+    max-width:600px;
+    margin-bottom:30px;
 }
 
 .btn{
     display:inline-block;
-    padding:13px 22px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:700;
-    border:none;
-    cursor:pointer;
-    transition:.2s;
-}
-
-.btn-primary{
-    background:#1769ff;
+    background:#2563eb;
     color:white;
-    box-shadow:0 8px 20px #1769ff30;
+    padding:13px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
+    transition:.3s;
 }
 
-.btn-primary:hover{
+.btn:hover{
+    background:#1d4ed8;
     transform:translateY(-2px);
-    background:#0958e8;
 }
 
-.btn-light{
+.btn-outline{
     background:white;
-    color:#1769ff;
-    border:1px solid #dce3ef;
+    color:#2563eb;
+    border:2px solid #2563eb;
 }
 
-/* PHOTO */
-
-.teacher-photo{
-    display:flex;
-    justify-content:center;
+.btn-outline:hover{
+    color:white;
 }
 
-.teacher-photo img{
-    width:340px;
-    height:420px;
+.hero-image{
+    flex:0 0 350px;
+    text-align:center;
+}
 
+.hero-image img{
+    width:320px;
+    height:380px;
     object-fit:cover;
-
     border-radius:25px;
-
-    border:8px solid white;
-
-    box-shadow:
-    0 25px 60px rgba(23,32,51,.20);
-
-    display:block;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
 }
 
-/* GENERAL */
-
+/* SECTION */
 section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
+    padding:80px 8%;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:45px;
+    margin-bottom:50px;
 }
 
 .section-title h2{
@@ -194,44 +154,37 @@ section{
 }
 
 .section-title p{
-    color:#667085;
+    color:#687386;
 }
 
-/* LEARNING CARDS */
-
-.cards{
+/* FEATURES */
+.features{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:22px;
+    gap:25px;
 }
 
 .card{
     background:white;
-    padding:28px;
-
-    border-radius:18px;
-
-    border:1px solid #e7ebf2;
-
-    box-shadow:0 10px 30px rgba(23,32,51,.07);
-
-    transition:.25s;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-
-    box-shadow:
-    0 18px 40px rgba(23,32,51,.12);
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
 }
 
 .icon{
-    font-size:32px;
-    margin-bottom:12px;
+    font-size:35px;
+    margin-bottom:15px;
 }
 
 .card h3{
-    margin-bottom:9px;
+    margin-bottom:10px;
+    font-size:21px;
 }
 
 .card p{
@@ -239,268 +192,276 @@ section{
 }
 
 /* SYLLABUS */
-
-.dark{
-    background:#111827;
-    color:white;
-}
-
-.dark .section-title p{
-    color:#b8c1d1;
-}
-
 .syllabus{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:18px;
+    background:#ffffff;
+}
+
+.lessons{
+    max-width:900px;
+    margin:auto;
 }
 
 .lesson{
-    background:#1c2638;
-
-    border:1px solid #2c394f;
-
+    display:flex;
+    gap:20px;
     padding:22px;
-
-    border-radius:14px;
-}
-
-.lesson h3{
-    color:#70a5ff;
-    margin-bottom:8px;
-}
-
-.lesson p{
-    color:#c4ccda;
-}
-
-/* TEACHER */
-
-.teacher{
-    display:grid;
-
-    grid-template-columns:.8fr 1.2fr;
-
-    gap:55px;
-
+    border-bottom:1px solid #e5e7eb;
     align-items:center;
 }
 
-.teacher > div:first-child{
+.lesson-number{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
     display:flex;
     justify-content:center;
-}
-
-.teacher img{
-    width:100%;
-    max-width:350px;
-    height:420px;
-
-    object-fit:cover;
-
-    border-radius:22px;
-
-    box-shadow:
-    0 20px 45px rgba(23,32,51,.15);
-
-    display:block;
-}
-
-.teacher-info h2{
-    font-size:40px;
-    margin-bottom:12px;
-}
-
-.teacher-info h3{
-    font-size:28px;
-    color:#1769ff;
-    margin-bottom:5px;
-}
-
-.teacher-info p{
-    color:#657084;
-    margin-bottom:15px;
-}
-
-.points{
-    list-style:none;
-    margin:20px 0;
-}
-
-.points li{
-    margin:10px 0;
-    font-weight:600;
-}
-
-.points li::before{
-    content:"✓";
-    color:#1769ff;
-    margin-right:10px;
+    align-items:center;
     font-weight:bold;
+    flex-shrink:0;
 }
 
-/* STATS */
-
-.stats{
-    display:flex;
-    gap:35px;
-    margin-top:25px;
+.lesson h3{
+    margin-bottom:4px;
 }
 
-.stat strong{
-    display:block;
-    font-size:28px;
-    color:#1769ff;
-}
-
-.stat span{
+.lesson p{
     color:#687386;
-    font-size:14px;
 }
 
 /* COURSE */
-
-.pricing{
-    background:
-    linear-gradient(135deg,#1769ff,#4c8dff);
-
-    color:white;
-}
-
-.price-card{
-    max-width:500px;
-
+.course-box{
+    max-width:900px;
     margin:auto;
-
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    padding:50px;
+    border-radius:25px;
     text-align:center;
-
-    background:white;
-
-    color:#172033;
-
-    padding:40px;
-
-    border-radius:22px;
-
-    box-shadow:
-    0 25px 60px rgba(0,0,0,.15);
+    box-shadow:0 20px 50px rgba(37,99,235,.25);
 }
 
-.price{
-    font-size:45px;
-    font-weight:800;
-    margin:15px 0;
+.course-box h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.course-box p{
+    margin-bottom:25px;
+    opacity:.9;
+}
+
+.course-points{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    text-align:left;
+    margin:30px auto;
+    max-width:600px;
+}
+
+.course-points div{
+    background:rgba(255,255,255,.12);
+    padding:12px 15px;
+    border-radius:8px;
+}
+
+/* TEACHER */
+.teacher{
+    display:flex;
+    align-items:center;
+    gap:60px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.teacher-image{
+    flex:0 0 300px;
+}
+
+.teacher-image img{
+    width:300px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.teacher-info{
+    flex:1;
+}
+
+.teacher-info h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.teacher-info h3{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.teacher-info p{
+    color:#687386;
+    margin-bottom:15px;
 }
 
 /* CONTACT */
+.contact{
+    background:#eef5ff;
+}
 
 .contact-box{
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:25px;
-}
-
-.contact-info,
-.form{
+    max-width:750px;
+    margin:auto;
     background:white;
-
-    padding:30px;
-
-    border-radius:18px;
-
-    border:1px solid #e5e9f2;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.07);
 }
 
-.form input,
-.form textarea,
-.form select{
+form{
+    display:grid;
+    gap:15px;
+}
+
+input,
+textarea,
+select{
     width:100%;
-
-    padding:13px;
-
-    margin-bottom:14px;
-
-    border:1px solid #d9dfeb;
-
-    border-radius:9px;
-
-    font-size:15px;
-
+    padding:14px;
+    border:1px solid #d6dbe5;
+    border-radius:8px;
     outline:none;
+    font-size:15px;
 }
 
-.form input:focus,
-.form textarea:focus,
-.form select:focus{
-    border-color:#1769ff;
+input:focus,
+textarea:focus,
+select:focus{
+    border-color:#2563eb;
 }
 
-.form textarea{
-    height:120px;
+textarea{
+    min-height:120px;
     resize:vertical;
 }
 
-/* FOOTER */
-
-footer{
-    background:#0b1220;
-
-    color:#aeb8c8;
-
-    text-align:center;
-
-    padding:30px 20px;
+button{
+    border:none;
+    cursor:pointer;
+    background:#2563eb;
+    color:white;
+    padding:14px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
 }
 
-footer strong{
+button:hover{
+    background:#1d4ed8;
+}
+
+/* FOOTER */
+footer{
+    background:#111827;
     color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+footer p{
+    color:#cbd5e1;
+    margin-top:8px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    color:white;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:999;
 }
 
 /* MOBILE */
-
-@media(max-width:850px){
+@media(max-width:800px){
 
     nav{
+        padding:15px 5%;
+    }
+
+    nav ul{
         display:none;
     }
 
-    .hero-container,
-    .teacher,
-    .contact-box{
-        grid-template-columns:1fr;
-    }
-
     .hero{
-        padding:60px 0;
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:60px 5%;
     }
 
     .hero h1{
-        font-size:42px;
+        font-size:40px;
     }
 
-    .teacher-photo{
-        order:-1;
+    .hero p{
+        font-size:17px;
     }
 
-    .teacher-photo img{
-        width:280px;
-        height:350px;
+    .hero-image{
+        flex:auto;
     }
 
-    .cards,
-    .syllabus{
+    .hero-image img{
+        width:260px;
+        height:320px;
+    }
+
+    section{
+        padding:60px 5%;
+    }
+
+    .features{
         grid-template-columns:1fr;
     }
 
-    .teacher img{
-        width:280px;
-        height:350px;
+    .teacher{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
     }
 
-    .stats{
-        flex-wrap:wrap;
+    .teacher-image img{
+        width:260px;
+        height:320px;
+    }
+
+    .course-points{
+        grid-template-columns:1fr;
+    }
+
+    .course-box{
+        padding:35px 20px;
+    }
+
+    .course-box h2{
+        font-size:30px;
+    }
+
+    .contact-box{
+        padding:25px;
     }
 }
 </style>
@@ -508,750 +469,554 @@ footer strong{
 
 <body>
 
-<!-- HEADER -->
-
-<header>
-
-<div class="navbar">
-
-<div class="logo">
-Speak<span>Easy</span>
-</div>
-
+<!-- NAVBAR -->
 <nav>
+    <div class="logo">SpeakEasy English</div>
 
-<a href="#home">Home</a>
-<a href="#syllabus">Syllabus</a>
-<a href="#learning">Learning</a>
-<a href="#teacher">Teacher</a>
-<a href="#contact">Contact</a>
-
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Learning</a></li>
+        <li><a href="#syllabus">Syllabus</a></li>
+        <li><a href="#teacher">Teacher</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
-
-</div>
-
-</header>
 
 
 <!-- HERO -->
-
 <section class="hero" id="home">
 
-<div class="hero-container">
+    <div class="hero-text">
 
-<div>
+        <div class="badge">
+            Professional Spoken English Classes
+        </div>
 
-<span class="badge">
-🎓 Spoken English Learning
-</span>
+        <h1>
+            Speak English<br>
+            <span>With Confidence.</span>
+        </h1>
 
-<h1>
-Speak English
-<br>
-<span>With Confidence.</span>
-</h1>
+        <p>
+            Improve your English speaking, grammar, vocabulary,
+            pronunciation and everyday conversation skills with
+            practical learning.
+        </p>
 
-<p>
+        <a href="#contact" class="btn">
+            Join the Course
+        </a>
 
-English bolna mushkil nahi hai.
+        <a href="#syllabus" class="btn btn-outline">
+            View Syllabus
+        </a>
 
-Learn practical English through daily
-conversation, grammar, vocabulary and
-speaking practice with <strong>Adarsh</strong>.
+    </div>
 
-</p>
+    <div class="hero-image">
 
-<div class="buttons">
+        <!-- IMPORTANT: GitHub file name is Adarsh.jpg -->
+        <img
+            src="./Adarsh.jpg?v=2"
+            alt="Adarsh - Spoken English Teacher"
+        >
 
-<a class="btn btn-primary" href="#syllabus">
-Explore Syllabus
-</a>
-
-<a class="btn btn-light" href="#contact">
-Join Learning
-</a>
-
-</div>
-
-</div>
-
-
-<!-- YOUR PHOTO -->
-
-<div class="teacher-photo">
-
-<img
-src="./Adarsh.jpg?v=2"
-alt="Adarsh - Spoken English Teacher"
->
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- LEARNING -->
+<!-- FEATURES -->
+<section id="features">
 
-<section id="learning">
+    <div class="section-title">
 
-<div class="container">
+        <h2>What You Will Learn</h2>
 
-<div class="section-title">
+        <p>
+            Build real-world English skills step by step.
+        </p>
 
-<h2>
-What You Will Learn
-</h2>
-
-<p>
-From basic English to confident everyday communication.
-</p>
-
-</div>
+    </div>
 
 
-<div class="cards">
+    <div class="features">
+
+        <div class="card">
+
+            <div class="icon">🗣️</div>
+
+            <h3>Speaking Practice</h3>
+
+            <p>
+                Practice daily English speaking and learn
+                how to communicate confidently.
+            </p>
+
+        </div>
 
 
-<div class="card">
+        <div class="card">
 
-<div class="icon">🗣️</div>
+            <div class="icon">📚</div>
 
-<h3>
-Speaking Practice
-</h3>
+            <h3>Grammar</h3>
 
-<p>
-Daily conversation, sentence formation and
-real-life English speaking practice.
-</p>
+            <p>
+                Learn important grammar rules with simple
+                examples and practical sentences.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="card">
 
-<div class="icon">📚</div>
+            <div class="icon">📖</div>
 
-<h3>
-Grammar
-</h3>
+            <h3>Vocabulary</h3>
 
-<p>
-Learn essential grammar in a simple and
-practical way with examples.
-</p>
+            <p>
+                Learn useful English words and phrases
+                for everyday conversations.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="card">
 
-<div class="icon">🧠</div>
+            <div class="icon">🎧</div>
 
-<h3>
-Vocabulary
-</h3>
+            <h3>Listening</h3>
 
-<p>
-Build useful vocabulary for school, work,
-travel and everyday conversations.
-</p>
+            <p>
+                Improve your ability to understand
+                spoken English naturally.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="card">
 
-<div class="icon">🎧</div>
+            <div class="icon">🔊</div>
 
-<h3>
-Listening
-</h3>
+            <h3>Pronunciation</h3>
 
-<p>
-Improve your understanding of spoken English
-through listening exercises.
-</p>
+            <p>
+                Learn correct pronunciation and improve
+                your English speaking clarity.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="card">
 
-<div class="icon">🔊</div>
+            <div class="icon">💬</div>
 
-<h3>
-Pronunciation
-</h3>
+            <h3>Conversation</h3>
 
-<p>
-Practice clear pronunciation and learn how
-common English words are spoken.
-</p>
+            <p>
+                Learn practical conversations for school,
+                work, travel and everyday life.
+            </p>
 
-</div>
+        </div>
 
-
-<div class="card">
-
-<div class="icon">💬</div>
-
-<h3>
-Conversation
-</h3>
-
-<p>
-Learn how to introduce yourself, ask questions,
-give answers and communicate naturally.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- SYLLABUS -->
+<section class="syllabus" id="syllabus">
 
-<section class="dark" id="syllabus">
+    <div class="section-title">
 
-<div class="container">
+        <h2>Spoken English Syllabus</h2>
 
-<div class="section-title">
+        <p>
+            Complete learning path from basic to confident speaking.
+        </p>
 
-<h2>
-Spoken English Syllabus
-</h2>
+    </div>
 
-<p>
-A structured learning path from Beginner to Advanced.
-</p>
 
-</div>
+    <div class="lessons">
 
+        <div class="lesson">
 
-<div class="syllabus">
+            <div class="lesson-number">01</div>
 
+            <div>
+                <h3>English Basics</h3>
+                <p>Alphabet, words, sentences and basic communication.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-01 — English Basics
-</h3>
 
-<p>
-Alphabet, basic words, common expressions
-and simple sentences.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">02</div>
 
+            <div>
+                <h3>Introduction</h3>
+                <p>How to introduce yourself and talk about yourself.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-02 — Self Introduction
-</h3>
 
-<p>
-Name, hobbies, family, education and
-personal introduction.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">03</div>
 
+            <div>
+                <h3>Daily Use English</h3>
+                <p>Useful sentences for everyday situations.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-03 — Daily Conversation
-</h3>
 
-<p>
-Morning routine, school, friends, shopping,
-travelling and common situations.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">04</div>
 
+            <div>
+                <h3>Basic Grammar</h3>
+                <p>Nouns, pronouns, verbs, adjectives and sentence structure.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-04 — Basic Grammar
-</h3>
 
-<p>
-Nouns, pronouns, verbs, adjectives, articles,
-prepositions and conjunctions.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">05</div>
 
+            <div>
+                <h3>Tenses</h3>
+                <p>Present, past and future tense with practical examples.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-05 — Tenses
-</h3>
 
-<p>
-Present, Past and Future tense with
-practical speaking examples.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">06</div>
 
+            <div>
+                <h3>Question Formation</h3>
+                <p>Learn how to ask and answer questions in English.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-06 — Vocabulary Building
-</h3>
 
-<p>
-Daily-use words, synonyms, antonyms,
-phrases and useful expressions.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">07</div>
 
+            <div>
+                <h3>Vocabulary Building</h3>
+                <p>Important words, phrases and expressions.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-07 — Question & Answer
-</h3>
 
-<p>
-Learn WH questions, Yes/No questions
-and natural responses.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">08</div>
 
+            <div>
+                <h3>Conversation Practice</h3>
+                <p>Real-life conversation and speaking practice.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-08 — Confidence Building
-</h3>
 
-<p>
-Think in English, reduce hesitation
-and practice speaking confidently.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">09</div>
 
+            <div>
+                <h3>Pronunciation</h3>
+                <p>Improve pronunciation, fluency and speaking clarity.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-09 — Advanced Conversation
-</h3>
 
-<p>
-Long conversations, opinions, discussions
-and real-world communication.
-</p>
+        <div class="lesson">
 
-</div>
+            <div class="lesson-number">10</div>
 
+            <div>
+                <h3>Confidence Building</h3>
+                <p>Speak English confidently in real-life situations.</p>
+            </div>
 
-<div class="lesson">
+        </div>
 
-<h3>
-10 — Final Speaking Practice
-</h3>
-
-<p>
-Presentation, interview practice and
-complete conversation sessions.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- TEACHER -->
-
-<section id="teacher">
-
-<div class="container">
-
-<div class="teacher">
-
-
-<div>
-
-<img
-src="./Adarsh.jpg?v=2"
-alt="Adarsh English Teacher"
->
-
-</div>
-
-
-<div class="teacher-info">
-
-<h2>
-Meet Your Teacher
-</h2>
-
-<h3>
-Adarsh
-</h3>
-
-<p>
-<strong>
-Spoken English Teacher
-</strong>
-</p>
-
-<p>
-My goal is to make English learning simple,
-practical and comfortable for students who
-find it difficult to speak English.
-</p>
-
-
-<ul class="points">
-
-<li>
-Beginner-friendly teaching
-</li>
-
-<li>
-Daily speaking practice
-</li>
-
-<li>
-Simple grammar explanations
-</li>
-
-<li>
-Practical real-life English
-</li>
-
-<li>
-Confidence-focused learning
-</li>
-
-</ul>
-
-
-<div class="stats">
-
-<div class="stat">
-
-<strong>
-10+
-</strong>
-
-<span>
-Learning Topics
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-100%
-</strong>
-
-<span>
-Practice Focus
-</span>
-
-</div>
-
-
-<div class="stat">
-
-<strong>
-1:1
-</strong>
-
-<span>
-Simple Guidance
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- COURSE -->
+<section>
 
-<section class="pricing">
+    <div class="course-box">
 
-<div class="container">
+        <h2>Complete Spoken English Course</h2>
 
-<div class="section-title">
-
-<h2>
-Start Your English Journey
-</h2>
-
-<p>
-Learn step-by-step and practice every day.
-</p>
-
-</div>
+        <p>
+            A practical learning program designed to help
+            students improve their English communication.
+        </p>
 
 
-<div class="price-card">
+        <div class="course-points">
 
-<h2>
-Spoken English Course
-</h2>
+            <div>✓ Daily Speaking Practice</div>
 
-<p>
-Beginner → Intermediate → Advanced
-</p>
+            <div>✓ Grammar Fundamentals</div>
 
-<div class="price">
-FREE
-</div>
+            <div>✓ Vocabulary Development</div>
 
-<p>
-Explore the lessons, practice conversations
-and improve your English communication skills.
-</p>
+            <div>✓ Conversation Practice</div>
 
-<br>
+            <div>✓ Pronunciation Training</div>
 
-<a href="#contact" class="btn btn-primary">
-Start Learning
-</a>
+            <div>✓ Confidence Building</div>
 
-</div>
+        </div>
 
-</div>
+
+        <a href="#contact" class="btn">
+            Enquire Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- TEACHER -->
+<section id="teacher">
+
+    <div class="section-title">
+
+        <h2>Meet Your Teacher</h2>
+
+        <p>
+            Learn English with practical guidance.
+        </p>
+
+    </div>
+
+
+    <div class="teacher">
+
+        <div class="teacher-image">
+
+            <!-- IMPORTANT: GitHub file name is Adarsh.jpg -->
+            <img
+                src="./Adarsh.jpg?v=2"
+                alt="Adarsh English Teacher"
+            >
+
+        </div>
+
+
+        <div class="teacher-info">
+
+            <h2>Adarsh</h2>
+
+            <h3>Spoken English Teacher</h3>
+
+            <p>
+                Hello! I am Adarsh. My goal is to make English
+                learning simple, practical and confidence-building.
+            </p>
+
+            <p>
+                This course focuses on speaking practice,
+                grammar, vocabulary, pronunciation and
+                real-life English conversations.
+            </p>
+
+            <p>
+                Learn step by step and improve your communication
+                skills with regular practice.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 
 <!-- CONTACT -->
+<section class="contact" id="contact">
 
-<section id="contact">
+    <div class="section-title">
 
-<div class="container">
+        <h2>Join / Enquire Now</h2>
 
-<div class="section-title">
+        <p>
+            Fill the form to enquire about the Spoken English course.
+        </p>
 
-<h2>
-Contact & Enquiry
-</h2>
-
-<p>
-Have a question? Send an enquiry.
-</p>
-
-</div>
+    </div>
 
 
-<div class="contact-box">
+    <div class="contact-box">
+
+        <form id="enquiryForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
 
 
-<div class="contact-info">
-
-<h2>
-Let's Learn English
-</h2>
-
-<p style="margin-top:15px;color:#687386;">
-
-If you are a beginner or you hesitate
-while speaking English, start with the
-basics and practice consistently.
-
-</p>
-
-<br>
-
-<p>
-<strong>👨‍🏫 Teacher:</strong>
-Adarsh
-</p>
-
-<p>
-<strong>📚 Course:</strong>
-Spoken English
-</p>
-
-<p>
-<strong>🎯 Focus:</strong>
-Speaking & Communication
-</p>
-
-</div>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Mobile Number"
+                required
+            >
 
 
-<div class="form">
+            <select id="level" required>
 
-<form onsubmit="sendMessage(event)">
+                <option value="">
+                    Select Your English Level
+                </option>
 
-<input
-id="name"
-type="text"
-placeholder="Your Name"
-required
->
+                <option>Beginner</option>
 
-<input
-id="email"
-type="email"
-placeholder="Your Email"
-required
->
+                <option>Basic</option>
 
-<select id="level" required>
+                <option>Intermediate</option>
 
-<option value="">
-Select Your English Level
-</option>
+                <option>Advanced</option>
 
-<option>
-Beginner
-</option>
-
-<option>
-Basic
-</option>
-
-<option>
-Intermediate
-</option>
-
-<option>
-Advanced
-</option>
-
-</select>
+            </select>
 
 
-<textarea
-id="message"
-placeholder="Write your message..."
-required
-></textarea>
+            <textarea
+                id="message"
+                placeholder="Write your message..."
+            ></textarea>
 
 
-<button
-class="btn btn-primary"
-type="submit"
->
+            <button type="submit">
+                Send Enquiry
+            </button>
 
-Send Enquiry
+        </form>
 
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
 <!-- FOOTER -->
-
 <footer>
 
-<p>
-© 2026
-<strong>
-SpeakEasy English
-</strong>
-— Spoken English by Adarsh
-</p>
+    <h3>SpeakEasy English</h3>
 
-<p>
-Learn • Practice • Speak • Improve
-</p>
+    <p>
+        Spoken English Classes by Adarsh
+    </p>
+
+    <p>
+        © 2026 SpeakEasy English. All Rights Reserved.
+    </p>
 
 </footer>
 
 
+<!-- WHATSAPP -->
+<a
+    class="whatsapp"
+    href="https://wa.me/91XXXXXXXXXX"
+    target="_blank"
+    title="Contact on WhatsApp"
+>
+    ☎
+</a>
+
+
+<!-- JAVASCRIPT -->
 <script>
 
-function sendMessage(event){
+document
+.getElementById("enquiryForm")
+.addEventListener("submit", function(event){
 
-event.preventDefault();
+    event.preventDefault();
 
-const name =
-document.getElementById("name").value;
+    const name =
+        document.getElementById("name").value;
 
-const level =
-document.getElementById("level").value;
+    const phone =
+        document.getElementById("phone").value;
 
-const message =
-document.getElementById("message").value;
+    const level =
+        document.getElementById("level").value;
 
-
-/*
-=========================================
-PUT YOUR WHATSAPP NUMBER HERE
-Example:
-919876543210
-=========================================
-*/
-
-const whatsappNumber =
-"91XXXXXXXXXX";
+    const message =
+        document.getElementById("message").value;
 
 
-const text =
-"Hello Adarsh!%0A%0A" +
+    /*
+       IMPORTANT:
+       Yaha apna WhatsApp number likhna hai.
 
-"Name: " +
-encodeURIComponent(name) +
+       Example:
+       919876543210
 
-"%0AEnglish Level: " +
-encodeURIComponent(level) +
+       Country code ke saath number likhna.
+    */
 
-"%0AMessage: " +
-encodeURIComponent(message);
+    const whatsappNumber =
+        "91XXXXXXXXXX";
 
 
-window.open(
-"https://wa.me/" +
-whatsappNumber +
-"?text=" +
-text,
-"_blank"
-);
+    const text =
+        "Hello Adarsh,%0A%0A" +
+        "I want to enquire about Spoken English Classes.%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Mobile: " + phone + "%0A" +
+        "English Level: " + level + "%0A" +
+        "Message: " + message;
 
-}
+
+    const url =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        text;
+
+
+    window.open(url, "_blank");
+
+});
 
 </script>
 
 </body>
-    </html>
+            </html>
